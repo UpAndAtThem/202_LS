@@ -1,20 +1,27 @@
-div {
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  display: inline-block;
-  margin-right: 20px;
+body, main, figure, figcaption, img {
+  margin: 0;
+  padding: 0;
 }
 
-.red {
-  background-color: #fcc;
-  padding: 20px;
+body {
+  background-image: url("http://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png");
+  background-size: cover;
 }
 
-.blue {
-  border: solid;
-  border-width: 5px;
-  background-color: #ccf;
-
+figure {
+    width: 50%;
+    margin: 50px 0;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
+img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1rem;
+}
