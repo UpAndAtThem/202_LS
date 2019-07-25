@@ -1,27 +1,46 @@
-body, main, figure, figcaption, img {
-  margin: 0;
+html {
+  font-size: 20px;
+}
+
+nav ul {
+  
+  border-radius: 25px;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+nav li { 
+  background-color: yellow;
+  padding: 15px 0;
+  width: 137.5px;
+  color: blue;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid;
+  border-radius: 25px;
+  margin: 0 40px;
+}
+
+nav a {
+  box-sizing: border-box;
+  line-height: 2.5;
+  padding: 0 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav li:hover {
+  background-color: green;
+  color: yellow;
+}
+
+ul  {
   padding: 0;
 }
 
 body {
-  background-image: url("http://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png");
-  background-size: cover;
+  margin: 0;
 }
 
-figure {
-    width: 50%;
-    margin: 50px 0;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-img {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-figcaption {
-  text-align: center;
-  font-size: 1rem;
-}
