@@ -1,0 +1,163 @@
+html {
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article {
+  padding: 10px 15px 15px 15px;
+  width: 680px;
+  border: 2px solid;
+  font-family: sans-serif;
+}
+
+header {
+  font-size: 28px;
+  border-bottom: 15px solid;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  border-top: 1.06rem solid;
+  margin: 5px 0 0 0;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+
+dl, dd, dt {
+  margin: 0 0;
+  display: inline-block;
+  padding: 2px 0;
+}
+
+header dl:first-of-type dt {
+  font-weight: bold;
+}
+
+header > dl:nth-of-type(n - 2) {
+  width: 50%;
+}
+
+header > dl:nth-of-type(2) {
+  text-align: right;
+}
+
+table {
+  border-spacing: 0px;
+  width: 100%;
+}
+
+table:first-of-type tt, td {
+  display: inline-block;
+}
+
+table:first-of-type thead tr > th {
+  margin-left: auto;
+  border-bottom: 1px solid; 
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+table:first-of-type tbody > tr {
+  border-bottom: 1px solid;
+}
+
+table:first-of-type tbody  td:last-of-type {
+  width: 18.5%;
+  text-align: right;
+  height: 42px;
+}
+
+table:first-of-type td:last-of-type {
+  font-weight: bold;
+}
+
+table:nth-of-type(1) tbody:nth-of-type(2) tr td {
+  font-weight: normal;
+}
+
+dl {
+  width: auto;
+}
+
+dl dd:last-of-type {
+  font-weight: normal;
+}
+
+tr {
+  display: block;
+  width: auto;
+}
+
+tr th {
+  text-align: left;
+  display: inline-block;
+}
+
+tbody tr th {
+  width: 80%;
+}
+
+tr:nth-child(9) {
+  border-bottom: 15px solid;
+}
+
+article > p:last-of-type {
+  font-size: 0.88rem;
+  padding: 20px;
+}
+
+table:nth-of-type(1) tbody:nth-of-type(1) tr:last-of-type {
+  border-bottom: 15px solid;
+}
+
+table:nth-of-type(2) th {
+  font-size: 0.88rem;
+  text-align: left;
+  width: 20%;
+}
+
+table:nth-of-type(2) th:first-of-type{
+  width: 35%;
+}
+
+article table:nth-of-type(2) thead tr:first-of-type {
+  border-bottom: 1px solid;
+}
+
+table:nth-of-type(2) thead tr th {
+  font-weight: normal;
+}
+
+table:nth-of-type(2) tbody tr td:first-of-type {
+  width: 35%;
+}
+
+table:nth-of-type(2) tbody td:nth-of-type(n - 2) {
+  font-size: 0.80rem;
+  width: 20%;
+}
+
+tbody:nth-of-type(2) dt{
+  font-weight: normal;
+}
+
+.subset {
+  padding-left: 24px;
+  font-weight: normal;
+}
