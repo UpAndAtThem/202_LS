@@ -192,6 +192,10 @@ td.sub + th {
   font-weight: normal;
 }
 
+table:nth-of-type(1) tr:last-of-type {
+  border-bottom: 1px solid;
+}
+
 .indent {
   padding-left: 30px;
 }
