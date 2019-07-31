@@ -15,7 +15,7 @@ article {
 }
 
 header {
-  font-size: 28px;
+  font-size: 0;
   border-bottom: 15px solid;
   margin-bottom: 8px;
 }
@@ -35,10 +35,12 @@ h2 {
 
 p {
   margin: 0;
+  font-size: 1rem;
 }
 
 
 dl, dd, dt {
+  font-size: 1rem;
   margin: 0 0;
   display: inline-block;
   padding: 2px 0;
@@ -66,19 +68,14 @@ table:first-of-type tt, td {
 }
 
 table:first-of-type thead tr > th {
-  margin-left: auto;
-  border-bottom: 1px solid; 
+  margin-left: auto; 
   text-align: right;
   box-sizing: border-box;
   width: 100%;
 }
 
-table:first-of-type tbody > tr {
-  border-bottom: 1px solid;
-}
-
 table:first-of-type tbody  td:last-of-type {
-  width: 18.5%;
+  width: 20%;
   text-align: right;
   height: 42px;
 }
@@ -123,7 +120,7 @@ article > p:last-of-type {
 }
 
 table:nth-of-type(1) tbody:nth-of-type(1) tr:last-of-type {
-  border-bottom: 15px solid;
+  border-bottom: 20px solid;
 }
 
 table:nth-of-type(2) th {
@@ -157,7 +154,40 @@ tbody:nth-of-type(2) dt{
   font-weight: normal;
 }
 
-.subset {
-  padding-left: 24px;
+.sub {
+  width: 4%;
+}
+
+td.sub + th {
+  width: 76%;
+}
+
+td.sub + th + td {
+  border-top: 1px solid;
+}
+
+article > p {
+  text-indent: -15px;
+}
+
+tr {
+  font-size: 0;
+}
+
+table:first-of-type tr td:last-of-type {
+  border-top: 1px solid;
+  margin-top: -3px;
+}
+
+th, td:nth-of-type(n - 2) {
+  font-size: 1rem;
+}
+
+tbody > tr > th {
+  border-top: 1px solid;
+  margin-top: -3px;
+}
+
+td.sub + th {
   font-weight: normal;
 }
