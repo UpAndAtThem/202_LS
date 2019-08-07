@@ -1,15 +1,326 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  z-index: -2;
+}
+
+html, a {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.partial {
+  display: inline-block;
+}
+
+.example {
+  border: 2px dashed #404040;
+  width: 65%;
+  margin: 45px;
+  padding: 30px;
+}
+
+.content {
+  border: 2px solid gray;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 h1 {
-  color: blue;
+  font-size: 1.97rem;
 }
 
-dd {
-
+h2 {
+  font-size: 1.65rem;
 }
 
-form:last-of-type dd {
-
+h1, h2 {
+  color: #b50202;
 }
 
-form:last-of-type dt {
-
+h1, p {
+  margin-top: 1.75rem;
 }
+
+
+section > p, .relative > p {
+  line-height: 3rem;
+  color: #404040;
+  font-size: 1.35rem;
+  margin-bottom: 27px;
+}
+
+.i-lr-mar a {
+  margin: 30px;
+}
+
+.i-float {
+  overflow: hidden;
+}
+
+.i-pad a {
+  color: white;
+  background-color: green;
+  padding: 30px;
+}
+
+.i-float a{
+  display: inline-block;
+  margin: 20px 15px;
+  float: left;
+  border: 2px darkgreen solid;
+}
+
+.box1 {
+  background-color: #2c78ae;
+}
+
+span {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.box2 {
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+}
+
+.box2 p {
+  height: 60px;
+  line-height: 0;
+  color: white;
+}
+
+.box3 {
+  width: 90px;
+  background-color: orangered;
+}
+
+.box4 {
+  width: 180px;
+  height: 120px;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: pink;
+}
+
+.lfloat, .rfloat {
+  border: 1px solid red;
+  color: white;
+}
+
+.lfloat {
+  background-color: #2c78ae;
+  float: left;
+}
+
+.rfloat {
+  float: right;
+  background-color: orange;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+}
+
+.float-width-height {
+  padding: 25px 110px;
+}
+
+.right {
+  padding-left: 140px;
+  float: right;
+  background-color: blue;
+}
+
+.left {
+  float: left;
+  background-color: orangered;
+}
+
+.half {
+  width: 50%;
+}
+
+.forty {
+  width: 40%;
+}
+
+.left > span, .right > span {
+  display: inline-block;
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 35px;
+}
+
+.block a {
+  display: block;
+}
+
+.nav-link a {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  background-color: blue;
+}
+
+.inline-nav a {
+  display: inline-block;
+  padding: 20px 30px;
+}
+
+.nav a{
+  width: 19%;
+  margin: 20px 8px 25px 8px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.dashed-bottom:after {
+  content: "";
+  display: block;
+  padding-top: 30px;
+  border-bottom: 2px dashed black;
+}
+
+.center {
+  text-align: center;
+}
+
+.fp-box1 {
+  float: left;
+  background-color: red;
+}
+
+.fp-box2 {
+  float: right;
+  background-color: blue;
+}
+
+.fp-box3 {
+  background-color: green;
+  clear: both;
+}
+
+.fs0 {
+  font-size: 0;
+}
+
+.fs1rem {
+  font-size: 1rem;
+}
+
+.tall {
+  padding: 3rem 0;
+}
+
+.short {
+  padding: 1.5rem 0;
+}
+
+.box {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+code {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  font-family: monospace;
+}
+
+em {
+  font-size: 1.4rem;
+}
+
+ul {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  margin: 0 0 45px 40px;
+  padding-left: 40px;
+}
+
+li {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.rel-box {
+  width: 35%;
+  background-color: orangered;
+  border: 1px orangered;
+  top: 40px;
+  left: -100px;
+  text-align: center;
+  color: white;
+  padding: 25px 0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.z2 {
+  z-index: 2;
+}
+.absolute {
+  position: absolute;
+}
+
+.ab-box {
+  padding: 25px 20px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  width: 21%;
+  background-color: green;
+  top: -30px;
+  left: 220px;
+  right: 300px;
+  bottom: 120px;
+  border-radius: 10px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.fixed-box {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  width: 17%;
+  background-color: royalblue;
+  padding: 30px 70px;
+  top: 630px;
+  right: 1165px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+ div.top {
+  z-index: 1;
+ } 
