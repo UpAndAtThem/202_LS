@@ -1,0 +1,26 @@
+table {
+  font-size: 1.5rem;
+}
+
+body table.daily tr td:nth-child(n + 1) {
+  padding-left: 15px;
+}
+
+tr td:nth-child(2) {
+  color: blue;
+  padding-right: 11px;
+  text-align: center;
+}
+
+table.daily tr .amount:nth-child(n + 3) {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.less {
+  color: blue;
+}
+
+th:nth-child(1) {
+  text-align: left;
+}

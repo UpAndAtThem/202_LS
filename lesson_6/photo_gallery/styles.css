@@ -1,0 +1,128 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+  color: white;
+  padding: 26px 25px 22px 25px;
+}
+
+main {
+  padding: 20px 20px 30px 20px;
+  max-width: 1000px;
+  margin: 0px auto;
+  background-color: #333;
+}
+
+.flex-container {
+  padding-top: 6px;
+  margin: 18px 0 20px 0;
+  justify-content: space-between; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  flex-basis: 20%;
+  margin-bottom: 2rem;
+}
+
+.full img {
+  border: 15px solid white;
+  width: 100%;
+}
+
+.flex-container img {
+  border: 3px solid white;
+}
+
+figcaption  {
+  color: white;
+  padding: 6px 0;
+}
+
+@media (max-width: 1279px) {
+  .thumb {
+    margin-bottom: 20px;
+  }
+
+  .flex-container img {
+    width: 22%;
+  }
+}
+
+@media (max-width: 899px) {
+  .thumb {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+  }
+
+  .thumb {
+    width: 22.78%;
+  }
+
+  .thumb img {
+    width: 25%;
+  }
+}
+
+@media (max-width: 599px) {
+  .thumb {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+
+  .flex-container img {
+    width: 22.78%;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 2000px;
+    display: grid;
+
+    grid-template-areas: 
+      "header header"
+      "full gallery"
+  }
+
+  .full img {
+    width: 950px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  h1 {
+    grid-area: header;
+  }
+
+  .full {
+    grid-area: full;
+    width: 1000px;
+  }
+
+  .gallery {
+    grid-area: gallery;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .flex-containter img {
+    width: 25%;
+  } 
+}
