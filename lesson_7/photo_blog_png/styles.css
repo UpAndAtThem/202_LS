@@ -18,6 +18,12 @@ main {
   margin: 0 auto;
 }
 
+header {
+  margin-left: 20px;
+  float: left;
+  padding-top: 20px;
+}
+
 header h1  {
   display: inline-block;
   font-weight: normal;
@@ -26,17 +32,6 @@ header h1  {
   bottom: 22px;
   left: 11px;
   color: rgb(15, 52, 66);
-}
-
-p {
-  color: rgb(52, 96, 112);
-  margin: 20px 0 20px 0;
-}
-
-header {
-  margin-left: 20px;
-  float: left;
-  padding-top: 20px;
 }
 
 nav {
@@ -83,8 +78,14 @@ article:after {
 
 article h2 {
   color: rgb(52, 96, 112);
-  font-size: 1.77rem;
+  font-size: 1.775rem;
   margin: 36px 0 25px 0;
+  font-weight: normal;
+}
+
+p {
+  color: rgb(52, 96, 112);
+  margin: 20px 0 20px 0;
 }
 
 .right {
